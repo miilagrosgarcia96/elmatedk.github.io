@@ -11362,29 +11362,27 @@ textarea.form-control-lg {
   padding: 20px;
 }
 .main .productos h3, .main .productos .h3 {
-  text-align: left;
-  margin: 20px 20px 40px 20px;
+  text-align: center;
+  margin: 10px 10px 20px 10px;
   font-weight: bold;
 }
 .main .productos div {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 .main .productos div div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
   background-color: white;
   color: black;
   border: groove 6px #7d4a31;
   border-radius: 15px;
-  margin: 10%;
+  width: 320 px;
+  height: 400 px;
 }
 .main .productos div div h4, .main .productos div div .h4 {
   background-color: #7d4a31;
@@ -11395,8 +11393,8 @@ textarea.form-control-lg {
   text-align: center;
 }
 .main .productos div div img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 .main .productos div div a {
   text-decoration: none;
@@ -11423,7 +11421,7 @@ textarea.form-control-lg {
 .footer div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .footer div div {
@@ -11446,7 +11444,7 @@ textarea.form-control-lg {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /*--------INICIAR SESION y CONTACTO-------*/
@@ -11520,21 +11518,21 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .main-1 .productos-p div div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
   background-color: white;
   color: black;
   border: groove 6px #7d4a31;
   border-radius: 15px;
-  margin: 10%;
+  width: 320 px;
+  height: 400 px;
+  margin: 10px;
 }
 .main-1 .productos-p div div h3, .main-1 .productos-p div div .h3 {
   background-color: #7d4a31;
@@ -11545,8 +11543,8 @@ textarea.form-control-lg {
   text-align: center;
 }
 .main-1 .productos-p div div img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .main-1 .productos-p div div a {
   text-decoration: none;
