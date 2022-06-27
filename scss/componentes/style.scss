@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------Google fonts--------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    .grid-conteiner {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr auto auto; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header header "
+          "main main "
+          "footer footer"; 
+      }
+}
+/*-------- IMPORT -------*/
+@import"../scss-bootstrap/bootstrap.scss";
+@import"./header";
+@import"./main";
+@import"./footer";
+@import"../paginas/login-contacto";
+@import"../paginas/nosotros";
+@import"../paginas/productos";
+@import"../base/generales";
+@import"../base/variables";
+@import"../base/media";
+@import"../base/animaciones";
+
+
+
+
+

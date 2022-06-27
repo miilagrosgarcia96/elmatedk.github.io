@@ -1,0 +1,65 @@
+/*--------MQ index------*/
+
+
+@media screen and (max-width: 676px){
+    .main .hero p{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 676px){
+    .main .section-one h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 676px){
+    .main .section-one p {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 676px){
+    .main .productos h3 {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1126px){
+    .main-1 .productos-p div{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 973px){
+    .section-nos{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .footer div div h3 {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 716px){
+    .footer div{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/*--------MQ mobile------*/
+
+@media screen and (max-width: 376px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

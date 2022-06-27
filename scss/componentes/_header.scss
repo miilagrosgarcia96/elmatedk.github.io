@@ -1,0 +1,22 @@
+/*--------HEADER/NAV--------*/
+@import"../base/variables";
+
+.header {
+    background-color: $beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    nav ul {
+        display: flex;
+        list-style: none;
+        li {
+            margin-left: 20px;
+            margin-right: 15px;
+            a{
+                text-decoration: none;
+                color: $marron;
+            }
+        }
+    }
+}
