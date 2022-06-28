@@ -1,4 +1,17 @@
 /*--------INICIAR SESION y CONTACTO-------*/
+@import"../base/variables";
+@import"../base/maps-extend";
+
+/*--------MAPS-------*/
+$colors:(
+    1: rgb(92, 160, 92),
+    2: $marron,
+);
+@each $a,$v in $colors {
+    .btn-#{$a}{
+        background-color: #{$v};
+    }
+}
 
 .form-check{
     display: flex;
@@ -7,12 +20,15 @@
     margin-left: 5%;
     margin-right: 5%;
 } 
-.btn{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 5px;
-}
+
+.btn-1{
+@extend .btn-acceder;
+} 
+
+.btn-2{
+    @extend .btn-acceder;
+    } 
+
 
 .form {
     display: flex;

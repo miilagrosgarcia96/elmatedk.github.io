@@ -19,6 +19,35 @@ body .grid-conteiner {
 }
 
 /*-------- IMPORT -------*/
+/*---VARIABLES--------*/
+/*--------mixin-------*/
+/*--------extend-------*/
+.card, .card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  color: black;
+  border: groove 6px #7d4a31;
+  border-radius: 15px;
+}
+
+.card-productos {
+  margin: 10px;
+}
+
+.btn-acceder, .btn-2, .btn-1 {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -4522,7 +4551,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.card {
+.card, .card-productos {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -4533,26 +4562,27 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-.card > hr {
+.card > hr, .card-productos > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group {
+.card > .list-group, .card-productos > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child {
+.card > .list-group:first-child, .card-productos > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card > .list-group:last-child {
+.card > .list-group:last-child, .card-productos > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
-.card > .card-header + .list-group,
-.card > .list-group + .card-footer {
+.card > .card-header + .list-group, .card-productos > .card-header + .list-group,
+.card > .list-group + .card-footer,
+.card-productos > .list-group + .card-footer {
   border-top: 0;
 }
 
@@ -4637,7 +4667,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-group > .card {
+.card-group > .card, .card-group > .card-productos {
   margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
@@ -4645,36 +4675,40 @@ textarea.form-control-lg {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card {
+  .card-group > .card, .card-group > .card-productos {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card {
+  .card-group > .card + .card, .card-group > .card-productos + .card, .card-group > .card + .card-productos, .card-group > .card-productos + .card-productos {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child) {
+  .card-group > .card:not(:last-child), .card-group > .card-productos:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) .card-img-top, .card-group > .card-productos:not(:last-child) .card-img-top,
+.card-group > .card:not(:last-child) .card-header,
+.card-group > .card-productos:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
-.card-group > .card:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .card-productos:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer,
+.card-group > .card-productos:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child) {
+  .card-group > .card:not(:first-child), .card-group > .card-productos:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) .card-img-top, .card-group > .card-productos:not(:first-child) .card-img-top,
+.card-group > .card:not(:first-child) .card-header,
+.card-group > .card-productos:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
-.card-group > .card:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .card-productos:not(:first-child) .card-img-bottom,
+.card-group > .card:not(:first-child) .card-footer,
+.card-group > .card-productos:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -11325,6 +11359,35 @@ textarea.form-control-lg {
 
 /*------MAIN-------*/
 /*---VARIABLES--------*/
+/*---VARIABLES--------*/
+/*--------mixin-------*/
+/*--------extend-------*/
+.card, .card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  color: black;
+  border: groove 6px #7d4a31;
+  border-radius: 15px;
+}
+
+.card-productos {
+  margin: 10px;
+}
+
+.btn-acceder, .btn-2, .btn-1 {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
 .main {
   background-image: url("/imagenes/fondobeige.jpeg");
   display: flex;
@@ -11372,19 +11435,11 @@ textarea.form-control-lg {
   align-items: center;
   flex-wrap: wrap;
 }
-.main .productos div div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
-  background-color: white;
-  color: black;
-  border: groove 6px #7d4a31;
-  border-radius: 15px;
-  width: 320 px;
-  height: 400 px;
+.main .productos div .card, .main .productos div .card-productos {
+  width: 320px;
+  height: 400px;
 }
-.main .productos div div h4, .main .productos div div .h4 {
+.main .productos div .card h4, .main .productos div .card-productos h4, .main .productos div .card .h4, .main .productos div .card-productos .h4 {
   background-color: #7d4a31;
   width: 100%;
   color: white;
@@ -11392,11 +11447,11 @@ textarea.form-control-lg {
   font-size: 25px;
   text-align: center;
 }
-.main .productos div div img {
+.main .productos div .card img, .main .productos div .card-productos img {
   width: 300px;
   height: 300px;
 }
-.main .productos div div a {
+.main .productos div .card a, .main .productos div .card-productos a {
   text-decoration: none;
   color: white;
   background-color: green;
@@ -11406,7 +11461,7 @@ textarea.form-control-lg {
   font-style: italic;
   text-align: center;
 }
-.main .productos div div a:hover {
+.main .productos div .card a:hover, .main .productos div .card-productos a:hover {
   background-color: white;
   color: green;
 }
@@ -11448,19 +11503,51 @@ textarea.form-control-lg {
 }
 
 /*--------INICIAR SESION y CONTACTO-------*/
+/*---VARIABLES--------*/
+/*---VARIABLES--------*/
+/*--------mixin-------*/
+/*--------extend-------*/
+.card, .card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  color: black;
+  border: groove 6px #7d4a31;
+  border-radius: 15px;
+}
+
+.card-productos {
+  margin: 10px;
+}
+
+.btn-acceder, .btn-2, .btn-1 {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+/*--------MAPS-------*/
+.btn-1 {
+  background-color: rgb(92, 160, 92);
+}
+
+.btn-2 {
+  background-color: #7d4a31;
+}
+
 .form-check {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
 }
 
 .form {
@@ -11472,6 +11559,7 @@ textarea.form-control-lg {
 }
 
 /*--------NOSOTROS-------*/
+/*---VARIABLES--------*/
 .main-1 {
   display: flex;
   justify-content: center;
@@ -11498,6 +11586,36 @@ textarea.form-control-lg {
   padding: 20px;
 }
 
+/*---VARIABLES--------*/
+/*---VARIABLES--------*/
+/*--------mixin-------*/
+/*--------extend-------*/
+.card, .card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  color: black;
+  border: groove 6px #7d4a31;
+  border-radius: 15px;
+}
+
+.card-productos {
+  margin: 10px;
+}
+
+.btn-acceder, .btn-1, .btn-2 {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
 .main-1 {
   background-image: url("/imagenes/fondobeige.jpeg");
   display: flex;
@@ -11520,21 +11638,11 @@ textarea.form-control-lg {
   align-items: center;
   flex-wrap: wrap;
 }
-.main-1 .productos-p div div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
-  background-color: white;
-  color: black;
-  border: groove 6px #7d4a31;
-  border-radius: 15px;
-  width: 320 px;
-  height: 400 px;
-  margin: 10px;
+.main-1 .productos-p div .card-productos {
+  width: 320px;
+  height: 400px;
 }
-.main-1 .productos-p div div h3, .main-1 .productos-p div div .h3 {
+.main-1 .productos-p div .card-productos h3, .main-1 .productos-p div .card-productos .h3 {
   background-color: #7d4a31;
   width: 100%;
   color: white;
@@ -11542,11 +11650,11 @@ textarea.form-control-lg {
   font-size: 25px;
   text-align: center;
 }
-.main-1 .productos-p div div img {
+.main-1 .productos-p div .card-productos img {
   width: 250px;
   height: 250px;
 }
-.main-1 .productos-p div div a {
+.main-1 .productos-p div .card-productos a {
   text-decoration: none;
   color: white;
   background-color: green;
@@ -11556,7 +11664,7 @@ textarea.form-control-lg {
   font-style: italic;
   text-align: center;
 }
-.main-1 .productos-p div div a:hover {
+.main-1 .productos-p div .card-productos a:hover {
   background-color: white;
   color: green;
 }
