@@ -11697,16 +11697,18 @@ textarea.form-control-lg {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 1126px) {
-  .main-1 .productos-p div {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 @media screen and (max-width: 973px) {
   .section-nos {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 973px) {
+  .section-nos div img {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (max-width: 676px) {
