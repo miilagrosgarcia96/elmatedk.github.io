@@ -1,0 +1,7 @@
+agregué mixin para width y height para las imagenes de las card.
+agregué extends los productos.
+agregué un map para darle color a cada botón del formulario de la sección Contacto e Iniciar Sesion. (cada uno tiene un color para que se note la diferencia aunque no quede tan lindo esteticamente)
+borré codigos y clases innecesarios o no utilizados en los html y scss.
+agregué keywords en el index.
+agregué descripción del index.
+reduje peso de cada una de las imágenes. 
